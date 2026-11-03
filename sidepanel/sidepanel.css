@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 18px;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  background: #263b80;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+header h2 {
+  margin: 5px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background: #4059a9;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #263b80;
+}
+
+#output {
+  background: white;
+  min-height: 250px;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.chat {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

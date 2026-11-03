@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Sahayak AI Assistant",
+  "version": "1.0.0",
+  "description": "An AI-powered browser assistant that understands webpages and helps users safely.",
+  "permissions": ["sidePanel", "activeTab", "storage", "scripting", "tabs"],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Sahayak"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

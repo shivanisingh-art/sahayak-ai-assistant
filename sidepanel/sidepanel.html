@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sahayak AI</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+
+  <header>
+    <h2>🤖 Sahayak</h2>
+    <p>Your AI Browser Assistant</p>
+  </header>
+
+  <div class="actions">
+    <button id="summarize">Summarize Page</button>
+    <button id="translate">Translate</button>
+    <button id="detect">Detect Elements</button>
+  </div>
+<div class="settings">
+  <input id="apiKey" type="password" placeholder="Enter Gemini API key">
+  <button id="saveKey">Save API Key</button>
+</div> 
+  <div id="output">
+    <p>Welcome! Ask me anything about this webpage.</p>
+  </div>
+  <div class="errand">
+  <h3>Approved Errand – Send Email</h3>
+  <input id="emailTo" type="email" placeholder="Recipient email">
+  <input id="emailSubject" placeholder="Email subject">
+  <textarea id="emailBody" placeholder="Write your email here..."></textarea>
+  <button id="approveEmail">Approve & Send</button>
+  <p id="approvalStatus">Review your email before approving.</p>
+</div>
+  <div class="chat">
+    <input id="question" placeholder="Ask about this page...">
+    <button id="send">Send</button>
+  </div>
+
+
+  <script src="../scripts/ai.js"></script>
+  <script src="sidepanel.js"></script>
+
+</body>
+</html>
